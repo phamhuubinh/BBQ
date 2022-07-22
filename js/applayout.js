@@ -1,13 +1,13 @@
 document.getElementById("header").innerHTML = `    <nav class="container-fluid">
-<img src="./images/logo-Sunhomes-BBQ-01.png" alt="logo">
+<img src="../images/logo-Sunhomes-BBQ-01.png" alt="logo">
 <ul id="p">
-    <li ><a href="../index.html">Trang chủ</a></li>
-    <li ><a href="..//gioithieu.html" >Giới thiệu</a></li>
-    <li ><a href="../datban.html">Đặt bàn</a></li>
-    <li ><a href="../thucdon.html">Thực đơn</a></li>
-    <li ><a href="../tuyendung.html">Tuyển dụng</a></li>
-    <li ><a href="../tintuc.html">Tin tức</a></li>
-    <li ><a href="../lienhe.html">Liên hệ</a></li>
+    <li ><a href="../html/index.html">Trang chủ</a></li>
+    <li ><a href="../html/gioithieu.html" >Giới thiệu</a></li>
+    <li ><a href="../html/datban.html">Đặt bàn</a></li>
+    <li ><a href="../html/thucdon.html">Thực đơn</a></li>
+    <li ><a href="../html/tuyendung.html">Tuyển dụng</a></li>
+    <li ><a href="../html/tintuc.html">Tin tức</a></li>
+    <li ><a href="../html/lienhe.html">Liên hệ</a></li>
     <li class="hotline">
         <a href="#">
             <span>Hotline: 0989708895</span>
