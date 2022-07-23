@@ -1,3 +1,9 @@
+const pathName = location.href
+let isTintuc = false
+if (pathName.indexOf("tintuc") != -1) {
+    isTintuc = true
+}
+
 document.getElementById("header").innerHTML = `    <nav class="container-fluid">
 <img src="../images/logo-Sunhomes-BBQ-01.png" alt="logo">
 <ul id="p">
@@ -6,7 +12,7 @@ document.getElementById("header").innerHTML = `    <nav class="container-fluid">
     <li ><a href="../html/datban.html">Đặt bàn</a></li>
     <li ><a href="../html/thucdon.html">Thực đơn</a></li>
     <li ><a href="../html/tuyendung.html">Tuyển dụng</a></li>
-    <li ><a href="../html/tintuc.html">Tin tức</a></li>
+    <li ><a class="${isTintuc ? "active" : ""}" href="../html/tintuc.html">Tin tức</a></li>
     <li ><a href="../html/lienhe.html">Liên hệ</a></li>
     <li class="hotline">
         <a href="#">
@@ -47,6 +53,13 @@ document.getElementById("footer").innerHTML = `<div class="footer">
 </div>
 </div>`;
 
-document.getElementById("banner").innerHTML = `<div class="banner">
+const idbanner = document.getElementById("banner");
+let isbanner = false;
+if (idbanner === null) {
+    isbanner = false;
+} else {
+    isbanner = true;
+}
+document.getElementById("banner").innerHTML = `<div class="banner" style="display:${isbanner?"block":"none"}" >
 <img src="../images/giới thiệu/banner-234.jpg" alt="">
 </div>`;
